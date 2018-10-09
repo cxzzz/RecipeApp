@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--TODO: Generate layout to display raw json search results (for now) using the declared layout variables in SearchActivity.java-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/logoImage"
+        android:src="@drawable/logo"
+        android:layout_width="150sp"
+        android:layout_height="150sp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <EditText
+            android:id="@+id/searchBox"
+            style="@style/Widget.AppCompat.EditText"
+            android:layout_width="220dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="20dp"
+            android:hint="@string/search_hint" />
+
+        <Button
+            android:id="@+id/searchButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/searchBox"
+            android:layout_toEndOf="@+id/searchBox"
+            android:text="Search" />
+
+        <TextView
+            android:id="@+id/resultsDisplay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="110dp"
+            android:textSize="18sp" />
+
+        <ListView
+            android:id="@+id/listView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="154dp">
+
+        </ListView>
+
+    </RelativeLayout>
+</LinearLayout>

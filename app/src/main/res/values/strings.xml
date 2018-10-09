@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">RecipeSearch</string>
+    <string name="search_hint">Enter recipe name here</string>
+</resources>

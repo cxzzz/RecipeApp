@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:id="@+id/recipeImage" />
+
+    <TextView
+        android:text="Label"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        android:textColor="@color/colorPrimary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/label"
+        android:layout_toEndOf="@+id/recipeImage"
+        android:layout_marginLeft="10dp"
+        />
+
+    <TextView
+        android:id="@+id/yield"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/label"
+        android:text="Yield"
+        android:layout_toEndOf="@+id/recipeImage"
+        android:layout_marginLeft="10dp"
+        />
+
+    <TextView
+        android:id="@+id/calories"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/yield"
+        android:text="Calories"
+        android:layout_toEndOf="@+id/recipeImage"
+        android:layout_marginLeft="10dp"
+        />
+
+
+</RelativeLayout>
